@@ -1,0 +1,19 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using VehicleFleetManagement.Model.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+<ul class="navbar-nav">
+	@if (SignInManager.IsSignedIn(User))
+	{
+		<form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index","Home", new { area = "" })" method="post">
+			<button type="submit" class="nav-link btn btn-link text-dark">Wyloguj</button>
+		</form>
+	}
+	else
+	{
+	<li>
+		<a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Logowanie</a>
+	</li>
+	}
+</ul>
+
+@* <ul class="navbar-nav ms-auto"> *@

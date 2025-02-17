@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleFleetManagement.Web", "VehicleFleetManagement.Web\VehicleFleetManagement.Web.csproj", "{089D03CC-93C6-49BD-993B-2958942C2A6B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{352E6812-FF27-4280-90B4-CAC1FCFD0FBB} = {352E6812-FF27-4280-90B4-CAC1FCFD0FBB}
+		{721CDDB5-821B-40FD-8B8E-DA4FCBB677E1} = {721CDDB5-821B-40FD-8B8E-DA4FCBB677E1}
+		{8D7D047D-9A3D-4F70-A5DB-3485483FB748} = {8D7D047D-9A3D-4F70-A5DB-3485483FB748}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleFleetManagement.Model", "VehicleFleetManagement.Model\VehicleFleetManagement.Model.csproj", "{DCCF1A63-439A-4A29-A3CB-C6E0496C1DC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleFleetManagement.ViewModels", "VehicleFleetManagement.ViewModels\VehicleFleetManagement.ViewModels.csproj", "{352E6812-FF27-4280-90B4-CAC1FCFD0FBB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DCCF1A63-439A-4A29-A3CB-C6E0496C1DC2} = {DCCF1A63-439A-4A29-A3CB-C6E0496C1DC2}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleFleetManagement.Services", "VehicleFleetManagement.Services\VehicleFleetManagement.Services.csproj", "{721CDDB5-821B-40FD-8B8E-DA4FCBB677E1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{352E6812-FF27-4280-90B4-CAC1FCFD0FBB} = {352E6812-FF27-4280-90B4-CAC1FCFD0FBB}
+		{8D7D047D-9A3D-4F70-A5DB-3485483FB748} = {8D7D047D-9A3D-4F70-A5DB-3485483FB748}
+		{DCCF1A63-439A-4A29-A3CB-C6E0496C1DC2} = {DCCF1A63-439A-4A29-A3CB-C6E0496C1DC2}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleFleetManagement.DAL", "VehicleFleetManagement.DAL\VehicleFleetManagement.DAL.csproj", "{8D7D047D-9A3D-4F70-A5DB-3485483FB748}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DCCF1A63-439A-4A29-A3CB-C6E0496C1DC2} = {DCCF1A63-439A-4A29-A3CB-C6E0496C1DC2}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{089D03CC-93C6-49BD-993B-2958942C2A6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{089D03CC-93C6-49BD-993B-2958942C2A6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{089D03CC-93C6-49BD-993B-2958942C2A6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{089D03CC-93C6-49BD-993B-2958942C2A6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCCF1A63-439A-4A29-A3CB-C6E0496C1DC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCCF1A63-439A-4A29-A3CB-C6E0496C1DC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCCF1A63-439A-4A29-A3CB-C6E0496C1DC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCCF1A63-439A-4A29-A3CB-C6E0496C1DC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{352E6812-FF27-4280-90B4-CAC1FCFD0FBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{352E6812-FF27-4280-90B4-CAC1FCFD0FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{352E6812-FF27-4280-90B4-CAC1FCFD0FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{352E6812-FF27-4280-90B4-CAC1FCFD0FBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{721CDDB5-821B-40FD-8B8E-DA4FCBB677E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{721CDDB5-821B-40FD-8B8E-DA4FCBB677E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{721CDDB5-821B-40FD-8B8E-DA4FCBB677E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{721CDDB5-821B-40FD-8B8E-DA4FCBB677E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D7D047D-9A3D-4F70-A5DB-3485483FB748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D7D047D-9A3D-4F70-A5DB-3485483FB748}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D7D047D-9A3D-4F70-A5DB-3485483FB748}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D7D047D-9A3D-4F70-A5DB-3485483FB748}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		RESX_CultureCountyOverrides = ar=ar-LB
+	EndGlobalSection
+EndGlobal

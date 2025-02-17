@@ -1,0 +1,22 @@
+/* USE WHEN YOU HAVE MULTIPLE SERVICES AND THEIR DEPENDENCIES 
+{
+  "services": [
+    {
+      "name": "ServiceA",
+      "url": "http://serviceA.local",
+      "version": "1.0.0"
+    },
+    {
+      "name": "ServiceB",
+      "url": "http://serviceB.local",
+      "version": "2.0.0"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "ServiceA",
+      "to": "ServiceB",
+      "dependencyType": "API"
+    }
+  ]
+} */
